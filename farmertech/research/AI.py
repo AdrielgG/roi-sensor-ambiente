@@ -25,4 +25,4 @@ class CNN_Model(object):
         result = prediction.tolist()[0]
         pesos = [round(result[0],2) ,round(result[1],2)]
         data_value = "[ porco " + str(pesos[0]) + "] - [ fundo: "+ str(pesos[1])+"]"
-        return [data_value,imCrop]
+        return [data_value]

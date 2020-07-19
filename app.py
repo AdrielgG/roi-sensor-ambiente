@@ -22,8 +22,8 @@ def main():
         bb.add(image, beberoudo[0], beberoudo[1], beberoudo[0]+beberoudo[2], beberoudo[1]+beberoudo[3], "bebedouro", "aqua")
         bb.add(image, cocho[0], cocho[1], cocho[0]+ cocho[2], cocho[1]+cocho[3], "COCHO STATUS: " + data_value, "orange")
         img = image
-        roi_cocho = result[1]
-        cv2.imshow("roi sensor",roi_cocho)
+        #roi_cocho = result[1]
+        #cv2.imshow("roi sensor",roi_cocho)
         cv2.imshow('frame',img)
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
